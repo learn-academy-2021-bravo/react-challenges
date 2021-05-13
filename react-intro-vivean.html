@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+
+  </head>
+  <body>
+
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      class HelloReact extends React.Component{
+          //React.Component mother react
+        render(){
+          return(
+              <>
+              <Header/>
+            <h1>Hello React!</h1>
+
+            <p>Helloe B</p>
+            <BClass/>
+       
+      
+            </>
+          )
+        }
+      }
+      class Header extends React.Component{
+          render(){
+              return(
+                  <>
+                  <p>This is the header</p>
+                  <p>THere is the nav content</p>
+                  </>
+              )
+          }
+      }
+      class BClass extends React.Component{
+          render(){
+              return(
+                  <>
+                  <ul>
+                    <li>Diego</li>
+                    <li>Vivea</li>
+                    <li>Hex</li>
+                    <li>Kevin</li>
+                    <li>Dustin</li>
+                    <li>Sarah</li>
+                    <li>Ray</li>
+                    </ul>
+                  </>
+              )
+          }
+      }
+      const domContainer = document.querySelector('#react-container');
+      ReactDOM.render(<HelloReact />, domContainer);
+    </script>
+  </body>
+</html>
+<!-- Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (7:12) -->
+<!-- // Component call
+<Header/>  pacal nameing convention-->
