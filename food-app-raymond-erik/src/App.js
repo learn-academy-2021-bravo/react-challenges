@@ -9,6 +9,7 @@ class App extends Component{
         {"apple": 0.50,
         "marshmellows": 1.50,
         "ramen": 0.50,
+        "turkey": 5,
         },
       items:[
         "apple",
@@ -17,20 +18,25 @@ class App extends Component{
         "turkey"
       ]
     }
+
+    //our next step would be to create a method that gets passed down to displayfood, the method would be called on a buttonclick and informatin would get passed back up into parent component which will then update state.    
   }
   render(){
-    console.log(this.state.prices);
+  
     return(
       <>
       <h1>Food App</h1>
       <ul>
-        {this.state.items.map((value) => {
-          return <li>{ value }</li>
+        {this.state.items.map((value) =>{
+          return <DisplayFood 
+          //is passing individual items from this.state.items down to displayfood
+          foodItem ={value} 
+
+          //is passing the values from this.state.prices down to displayfoos
+          price={this.state.prices[value]} />
         })}
       </ul>
-      <DisplayFood foodList= {
-        this.state.items } 
-        price= {this.state.prices}/>
+     
       </>
 
     )
