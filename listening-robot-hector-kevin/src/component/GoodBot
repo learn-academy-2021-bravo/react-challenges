@@ -1,0 +1,13 @@
+import React from 'react' 
+ class GoodBot extends Component {
+  render() {
+    return (
+      <div>
+        <input/>
+        
+      </div>
+    )
+  }
+}
+
+export default GoodBot
