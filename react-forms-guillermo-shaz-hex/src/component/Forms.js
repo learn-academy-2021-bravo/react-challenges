@@ -21,6 +21,11 @@ export default class Forms extends Component {
         form[event.target.name] = event.target.value
         console.log("form", form)
         this.setState({form: form})
+
+    };
+    handleSubmit = (event) => {
+        event.preventDefault()
+     this.props.handleSubmitClick(this.state.form)
     }
     render() {
         return (
@@ -75,6 +80,14 @@ export default class Forms extends Component {
                     value = {this.state.form.park}
                     onChange ={this.onChange}
                     />
+                    <br/>
+                    <input
+                    type="submit"
+                    value="submit madlib words"
+                    onClick={this.handleSubmit}
+                    
+                    />
+
 
                 </form>
                 
