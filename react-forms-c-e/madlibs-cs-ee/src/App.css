@@ -1,0 +1,17 @@
+.madlibbox{
+  border: 6px;
+  border-style: inset;
+  font-size: 2 rem;
+  background-color: thistle;
+}
+.header{
+  border:seagreen;
+  border-style: outset;
+  background-color: skyblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8rem;
+}
+.form{
+  background-color: wheat;
+  font-size: 2rem;
+}
