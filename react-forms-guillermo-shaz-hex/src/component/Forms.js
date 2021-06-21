@@ -44,7 +44,7 @@ export default class Forms extends Component {
                     <input
                     type="text"
                     name= "typeOfPackaging" 
-                    value = {this.state.form.typeOfPackagings}
+                    value = {this.state.form.typeOfPackaging}
                     onChange ={this.onChange}
                     />
                     <br/>
