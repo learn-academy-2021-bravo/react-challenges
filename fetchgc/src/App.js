@@ -18,12 +18,12 @@ class App extends Component{
     console.log(this.state.pic)
     return (
       <>
-      <h1>This is the astronomy pic of the day</h1>
-      <button onClick={this.getPic}>get your photo of the day</button>
+        <h1>This is the astronomy pic of the day</h1>
+        <button onClick={this.getPic}>get your photo of the day</button>
 
-      <br/>
+        <br/>
 
-      {this.state.pic && <img src ={this.state.pic } alt= "Apod" style={{height: "300px" }} />}
+        {this.state.pic && <img src ={this.state.pic } alt= "Apod" style={{height: "300px" }} />}
 
 
 
